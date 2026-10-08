@@ -1,0 +1,23 @@
+# Security Policy
+
+This repository is intended to be used with secure development practices. If you believe you have found a security vulnerability or a leak of secrets, please do not open a public issue.
+
+Please report it privately by contacting the maintainers through GitHub privately or by using the repository owner’s secure reporting channel.
+
+## Reporting a vulnerability
+
+- Do not disclose details in public issues, pull requests, or commit messages.
+- Include a clear description of the issue, affected files or endpoints, and steps to reproduce.
+- If possible, include a proof of concept that does not expose sensitive data.
+- Allow reasonable time for a fix before sharing any remediation details publicly.
+
+## Secret handling
+
+- Never commit credentials, tokens, API keys, or private keys.
+- Prefer environment variables, GitHub Actions secrets, or a dedicated secret manager.
+- If a secret is accidentally committed, rotate it immediately and remove it from git history when needed.
+- Treat logs, workflow files, test data, and generated files as possible secret exposure points.
+
+## Responsible disclosure
+
+We appreciate responsible disclosure and will work to triage, remediate, and communicate updates as needed.
